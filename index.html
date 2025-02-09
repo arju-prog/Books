@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bookshelf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class = "navbar">
+          <div class = "logo">
+            <img src="image copy.png" id="logo" alt="My Bookshelf Logo">
+          </div>
+    <nav class="navbar">
+        <a href="#" class="nav-link active " data-section="home"> <i class="fa-solid fa-house"> Home </i></a>
+        <a href="#" class="nav-link" data-section="saved"><i class="fa-solid fa-heart"> Saved</i></a>
+        <a href="#" class="nav-link " data-section="books"><i class="fa-solid fa-book"> Books </i></a>
+    </nav>
+    </div>
+
+    <div class="content">
+        <div id="home" class="section active">
+            <h1>My Bookshelf</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for books...">
+                <button id="searchButton">Search</button>
+            </div>
+            <div id="bookshelf"></div>
+        </div>
+
+        <div id="saved" class="section">
+            <h1>Saved Books</h1>
+            <div id="savedBookshelf"></div>
+        </div>
+
+        <div id="books" class="section">
+            <h1>Recommended</h1>
+            <p>Your personal book collection will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
